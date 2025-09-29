@@ -81,7 +81,7 @@ main {
   font-size: 1.2rem;
 }
 
-.Pb-Sol-hr {
+.sec-hr {
   margin-bottom: 20px;
 }
 
@@ -104,20 +104,25 @@ main {
 }
 
 .case > p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #393939;
 }
 
 .about {
   margin-top: 25px;
+  margin-bottom: 25px;
+  overflow-x: visible;
 }
 
 .about-main {
+  width: calc(100% - 27.5px + 70px);
+  transform: translateX(-27.5px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 0;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about-main .ceo > h3 {
   font-size: 1.1rem;
@@ -157,14 +162,26 @@ main {
      object-fit: cover;
   flex-shrink: 0;
 }
-.about-main .member .info ul {
+.about-main .member ul {
+  display: inline-flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   align-self: center;
   padding-left: 1rem;
 }
-.about-main .member .info ul li {
-  font-size: 0.95rem;
+.about-main .member ul li {
+  white-space: pre-wrap;
+  font-size: 0.9rem;
   line-height: 1.4;
   margin-bottom: 0.3rem;
+  width: -moz-max-content;
+  width: max-content;
+  white-space-collapse: collapse;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 /* Mobile : stack verticalement */
